@@ -100,17 +100,3 @@ function createKeyboardSupport() {
 	});
   }
 }
-
-function touchStarted() {
-	// Resume the audio context for mobile devices when touched
-	if (getAudioContext().state !== 'running') {
-		getAudioContext().resume();
-	}
-	
-	for (let i = 0; i < 8; i++) {
-		if (touchX > x[i] - 10 && touchX < x[i] + 10 && touchY > y[i] - 10 && touchY < y[i] + 10) {
-			soundSwitch[i] = !soundSwitch[i]; // switch on/off if touched on eye
-		}
-	}
-	return false; // Prevent default touch behavior
-}
