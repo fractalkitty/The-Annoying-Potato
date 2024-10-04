@@ -11,6 +11,17 @@ body {
   text-align: center;
   user-select: none; /* Prevent text selection */
 }
+* {
+	-webkit-tap-highlight-color: transparent; /* For mobile Safari/Chrome */
+	outline: none; /* For desktop browsers */
+}
+
+/* Disable highlight specifically for images, canvas, or buttons */
+img, canvas, button {
+	-webkit-tap-highlight-color: transparent;
+	outline: none;
+	user-select: none; /* Prevent text/image selection */
+}
 
 /* Center the container for the p5.js sketch */
 #sketch-container {
