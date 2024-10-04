@@ -14,6 +14,7 @@ body {
 * {
 	-webkit-tap-highlight-color: transparent; /* For mobile Safari/Chrome */
 	outline: none; /* For desktop browsers */
+	user-select: none;
 }
 
 /* Disable highlight specifically for images, canvas, or buttons */
